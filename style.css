@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 915px;
+    font-family: sans-serif;
+}
+
+.main {
+    text-align: center;
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.icons li a, 
+.icons li button {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.icons li a.signin {
+    background-color: #1a73e8;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+section.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    font-size: 90px;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 12px;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.input svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    color: #555;
+    flex-shrink: 0;
+}
+
+.input input[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.input:focus-within {
+    box-shadow: 0 0 5px #1a73e8;
+}
+
+/* 🌐 Responsiveness */
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 60px;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    .input input[type="search"] {
+        font-size: 14px;
+    }
+
+    .icons li a,
+    .icons li button {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main h1 {
+        font-size: 40px;
+    }
+
+    .input{
+        width: 80%;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+}
