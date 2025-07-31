@@ -1,2 +1,2 @@
 # Home-page
-goole home page
+google home page
